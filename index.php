@@ -108,15 +108,15 @@ footer {
       Where id = '2'";
       $sql3 = "select id, productname, price, detail, img from product
       Where id = '3'";
-      $sql3 = "select id, productname, price, detail, img from product
+      $sql4 = "select id, productname, price, detail, img from product
       Where id = '4'";
-      $sql3 = "select id, productname, price, detail, img from product
+      $sql5 = "select id, productname, price, detail, img from product
       Where id = '5'";
-      $sql3 = "select id, productname, price, detail, img from product
+      $sql6 = "select id, productname, price, detail, img from product
       Where id = '6'";
-      $sql3 = "select id, productname, price, detail, img from product
+      $sql7 = "select id, productname, price, detail, img from product
       Where id = '7'";
-      $sql3 = "select id, productname, price, detail, img from product
+      $sql8 = "select id, productname, price, detail, img from product
       Where id = '8'";
       $stmt1 = $pdo->prepare($sql1);
       $stmt1->execute(); 
