@@ -70,8 +70,6 @@ footer {
 </style>
 </head>
 <body>
-
-<h2>CSS Layout Float</h2>
 <header>
   <h2>Cities</h2>
 </header>
