@@ -146,8 +146,8 @@ button:hover {
   <nav style=" height: 800px">
     <form action="login.php" method="POST">
       <h1>Login</h1>
-      <input placeholder="Username" type="text" name ="user" required="">
-      <input placeholder="Password" type="password" name = "pass" required="">
+      <input placeholder="Username" type="text" name ="userid" required="">
+      <input placeholder="Password" type="password" name = "password" required="">
       <button> Login</button> 
     </form>
   </nav>

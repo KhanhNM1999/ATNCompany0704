@@ -7,10 +7,10 @@
 <?php
 	require_once'./database.php';
 
-	$username = $_POST['user'];
+	$userid = $_POST['userid'];
 	$password = $_POST['pass'];
 
-	$sql = "SELECT COUNT(*) FROM user WHERE userid='".$username."' AND password='".$password."'";
+	$sql = "SELECT COUNT(*) FROM user WHERE userid='".$userid."' AND password='".$password."'";
 
 
 	// $sql = "SELECT * FROM users WHERE userid = 'hnl' AND password = '12d'";
