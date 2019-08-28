@@ -146,7 +146,7 @@ button:hover {
   <nav style=" height: 800px">
     <form action="signinprocess.php" method="POST">
       <h1>Login</h1>
-      <input placeholder="Username" type="text" name ="userid" required="">
+      <input placeholder="Username" type="text" name ="user" required="">
       <input placeholder="Password" type="password" name = "pass" required="">
       <button> Login</button> 
     </form>
