@@ -148,10 +148,5 @@ footer {
 </table>
   </article>
 </section>
-
-<footer>
-  <p>ATN Company</p>
-</footer>
-
 </body>
 </html>
