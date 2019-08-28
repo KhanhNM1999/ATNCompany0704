@@ -14,9 +14,9 @@
 
 if($count > 0)
 {
-	echo 'Login Succesful';
+	echo "Login Succesful";
 }
 else
 {
-	echo 'Fail con mẹ mày rồi'
+	echo "Fail con mẹ mày rồi";
 }
