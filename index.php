@@ -71,7 +71,8 @@ footer {
 </head>
 <body>
 <header>
-  <h2><img src="coverbackground.jpg" alt="Sandwich" style="width:100%"></h2>
+  <h2><img style="background-size: cover; background-repeat: no-repeat; background-position: 50% 50%;" src="coverbackground.jpg" alt="Sandwich" style="width:100%"></h2>
+
 </header>
 
 <section>
@@ -91,7 +92,7 @@ footer {
 </section>
 
 <footer>
-  <p>Footer</p>
+  <p>ATN Company</p>
 </footer>
 
 </body>
