@@ -1,22 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get Data</title>
+</head>
+<body>
 <?php
 	require_once'./database.php';
+
 	$username = $_POST['user'];
 	$password = $_POST['pass'];
 
-$sql="SELECT * FROM $tbl_name WHERE userid='$username' and password='$password'";
-$result=mysql_query($sql);
-$count=mysql_num_rows($result);
-// nếu tài khoản trùng khớp thì sẽ trả về giá trị 1 cho biến $count
-if($count==1){
- 
-// Lúc này nó sẽ tự động gửi đến trang thông báo đăng nhập thành công
-session_register("username");
-session_register("password");
-header("location:login_success.php");
-}
-else {
-echo "Sai tên đăng nhập hoặc mật khẩu";
-}
-?>
+	$sql = "SELECT COUNT(*) FROM user WHERE userid='".$username."' AND password='".$password."'";
 
+
+	// $sql = "SELECT * FROM users WHERE userid = 'hnl' AND password = '12d'";
+	$stmt = $pdo->prepare($sql);
+//$stmt->setFetchMode(PDO::FETCH_ASSOC);
+	$stmt->execute();
+	$count = $stmt->fetchColumn();
+		// $rows = mysql_num_rows($result);
+	if($count > 0)
+	{
+
+		echo "<h1> Login successful</h1>";
+		?>
+		Auto direct, please wait
+		<a href="index.php"> If not, please click here</a>
+		<?php
+		header("Refresh:1; url=index.php");
+	}
+	else 
+	{
+		echo "<h1> Login fail</h1>";
+		
+	}
 ?>
+</body>
+</html>
