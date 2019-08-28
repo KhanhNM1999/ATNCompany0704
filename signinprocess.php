@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Get Data</title>
-</head>
-<body>
+
 <?php
 	require_once'./database.php';
 
@@ -35,5 +30,3 @@
 		
 	}
 ?>
-</body>
-</html>
