@@ -71,7 +71,7 @@ footer {
 </head>
 <body>
 <header>
-  <h2><img src="/ATNCompany0704/lambanner-thiet-ke-banner.jpg" alt="Sandwich" style="width:100%"></h2>
+  <h2><img src="lambanner-thiet-ke-banner.jpg" alt="Sandwich" style="width:100%"></h2>
 </header>
 
 <section>
