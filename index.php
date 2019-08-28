@@ -122,18 +122,18 @@ footer {
   
     <tr>
       <th>
-        <img src= " <?php echo $arr1['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image">
-        <span> <?php echo $arr1['productname']?> </span>
+        <img src= " <?php echo $arr1['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br>
+        <span> <?php echo $arr1['productname']?> </span></br>
         <span><?php echo $arr1['price']; ?></span>
       </th>
       <th>
-        <img src= " <?php echo $arr2['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image">
-        <span> <?php echo $arr2['productname']?> </span>
+        <img src= " <?php echo $arr2['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br>
+        <span> <?php echo $arr2['productname']?> </span></br>
         <span><?php echo $arr2['price']; ?></span>
       </th>
       <th>
-        <img src= " <?php echo $arr3['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image">
-        <span> <?php echo $arr3['productname']?> </span>
+        <img src= " <?php echo $arr3['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br>
+        <span> <?php echo $arr3['productname']?> </span></br>
         <span><?php echo $arr3['price']; ?></span>
       </th>
       
