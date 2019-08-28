@@ -8,7 +8,7 @@
 	require_once'./database.php';
 
 	$userid = $_POST['userid'];
-	$password = $_POST['pass'];
+	$password = $_POST['password'];
 
 	$sql = "SELECT COUNT(*) FROM user WHERE userid='".$userid."' AND password='".$password."'";
 
