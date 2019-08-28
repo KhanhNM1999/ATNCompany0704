@@ -8,6 +8,17 @@
 * {
   box-sizing: border-box;
 }
+.bg {
+  /* The image used */
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -71,7 +82,7 @@ footer {
 </head>
 <body>
 <header>
-  <h2><img style="background-size: cover; background-repeat: no-repeat; background-position: 50% 50%;" src="coverbackground.jpg" alt="Sandwich" style="width:100%"></h2>
+  <h2><img class = "bg" src="coverbackground.jpg" alt="Sandwich" style="width:100%"></h2>
 
 </header>
 
