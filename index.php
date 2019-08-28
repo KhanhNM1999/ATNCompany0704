@@ -141,12 +141,34 @@ footer {
       
     </tr>
     <tr>
-      <th></th>
-      <th></th>
+      <th>
+        <img src= " <?php echo $arr4['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br>
+        <span> <?php echo $arr4['productname']?> </span></br>
+        <span><?php echo $arr4['price']; ?></span>
+      </th>
+      <th>
+        <img src= " <?php echo $arr5['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br>
+        <span> <?php echo $arr5['productname']?> </span></br>
+        <span><?php echo $arr5['price']; ?></span>
+      </th>
+      <th>
+        <img src= " <?php echo $arr6['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br>
+        <span> <?php echo $arr6['productname']?> </span></br>
+        <span><?php echo $arr6['price']; ?></span>
+      </th>
+    </tr>
+    <tr>
+      <th><img src= " <?php echo $arr7['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br>
+        <span> <?php echo $arr7['productname']?> </span></br>
+        <span><?php echo $arr7['price']; ?></span>
+      </th>
+      <th>
+        <img src= " <?php echo $arr8['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br>
+        <span> <?php echo $arr8['productname']?> </span></br>
+        <span><?php echo $arr8['price']; ?></span>
+      </th>
       <th></th>
     </tr>
-  
-
 </table>
   </article>
 </section>
