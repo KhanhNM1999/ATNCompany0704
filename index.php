@@ -144,11 +144,11 @@ button:hover {
 
 <section >
   <nav style=" height: 800px">
-    <form>
+    <form action="signinprocess.php" method="POST">
       <h1>Login</h1>
       <input placeholder="Username" type="text" required="">
       <input placeholder="Password" type="password" required="">
-      <button>Submit</button>
+      <button>LOGIN</button>
     </form>
     <ul>
       <li><a href=" ">Login</a></li>
