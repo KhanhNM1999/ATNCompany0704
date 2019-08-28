@@ -3,7 +3,7 @@
 	$username = $_POST['user'];
 	$password = $_POST['pass'];
 
-	$sql = "SELECT COUNT(*) FROM user WHERE userid='".$username."' AND password= '".$password."'";
+	$sql = "SELECT COUNT(*) FROM user WHERE user.userid='".$username."' AND user.password= '".$password."'";
 
 //	$sql = "SELECTION * FROM user WHERE userid = 'teamwork1201' AND password='deochoaihet1';
 
