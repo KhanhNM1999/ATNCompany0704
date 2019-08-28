@@ -17,7 +17,7 @@
 	if($count > 0)
 	{
 
-		echo "<h1> Login successful</h1>";
+		echo "<h1> Login successful </h1>";
 		?>
 		Auto direct, please wait
 		<a href="index.php"> If not, please click here</a>
