@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CSS Template</title>
+<title>ATN Toy Company</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -146,8 +146,8 @@ button:hover {
   <nav style=" height: 800px">
     <form action="signinprocess.php" method="POST">
       <h1>Login</h1>
-      <input placeholder="Username" type="text" required="">
-      <input placeholder="Password" type="password" required="">
+      <input placeholder="Username" type="text" name ="user" required="">
+      <input placeholder="Password" type="password" name = "pass" required="">
       <button>LOGIN</button>
     </form>
     <ul>
