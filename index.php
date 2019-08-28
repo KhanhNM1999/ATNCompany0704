@@ -69,6 +69,7 @@ footer {
   padding: 10px;
   text-align: center;
   color: white;
+  height: 200px;
 }
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
@@ -148,5 +149,10 @@ footer {
 </table>
   </article>
 </section>
+
+<footer>
+  <p>ATN Company</p>
+</footer>
+
 </body>
 </html>
