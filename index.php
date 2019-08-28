@@ -150,10 +150,9 @@ footer {
 </table>
   </article>
 </section>
-
+</body>
 <footer>
   <p>ATN Company</p>
 </footer>
 
-</body>
 </html>
