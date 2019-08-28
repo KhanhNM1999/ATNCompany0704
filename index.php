@@ -88,8 +88,8 @@ footer {
 
 </header>
 
-<section style=" height: 1000px" >
-  <nav>
+<section >
+  <nav style=" height: 800px">
     <ul>
       <li><a href=" ">Login</a></li>
       <li><a href=" ">Registration</a></li>
@@ -97,7 +97,7 @@ footer {
     </ul>
   </nav>
   
-  <article style=" height: 1000px" >
+  <article style=" height: 800px" >
     
 
     <?php
