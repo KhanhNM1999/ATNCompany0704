@@ -10,9 +10,9 @@
 }
 .bg {
   /* The image used */
-
+	background-image: url("coverbackground.jpg");
   /* Full height */
-  height: 100%; 
+  weight: 100%; 
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -82,7 +82,7 @@ footer {
 </head>
 <body>
 <header>
-  <h2><img class = "bg" src="coverbackground.jpg" alt="Sandwich" style="width:100%"></h2>
+  <div class = "bg"> </div>
 
 </header>
 
