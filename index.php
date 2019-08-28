@@ -71,15 +71,15 @@ footer {
 </head>
 <body>
 <header>
-  <h2><img src="lambanner-thiet-ke-banner.jpg" alt="Sandwich" style="width:100%"></h2>
+  <h2><img src="lambanner-thiet-ke-banner.jpg" alt="Sandwich" style="width:50%"></h2>
 </header>
 
 <section>
   <nav>
     <ul>
-      <li><a href="#">London</a></li>
-      <li><a href="#">Paris</a></li>
-      <li><a href="#">Tokyo</a></li>
+      <li><a href=" ">Login</a></li>
+      <li><a href=" ">Registration</a></li>
+      <li><a href=" ">Contact</a></li>
     </ul>
   </nav>
   
