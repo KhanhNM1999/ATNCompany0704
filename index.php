@@ -108,6 +108,16 @@ footer {
       Where id = '2'";
       $sql3 = "select id, productname, price, detail, img from product
       Where id = '3'";
+      $sql3 = "select id, productname, price, detail, img from product
+      Where id = '4'";
+      $sql3 = "select id, productname, price, detail, img from product
+      Where id = '5'";
+      $sql3 = "select id, productname, price, detail, img from product
+      Where id = '6'";
+      $sql3 = "select id, productname, price, detail, img from product
+      Where id = '7'";
+      $sql3 = "select id, productname, price, detail, img from product
+      Where id = '8'";
       $stmt1 = $pdo->prepare($sql1);
       $stmt1->execute(); 
       $arr1 =  $stmt1->fetch(PDO::FETCH_ASSOC);
@@ -119,6 +129,26 @@ footer {
       $stmt3 = $pdo->prepare($sql3);
       $stmt3->execute(); 
       $arr3 =  $stmt3->fetch(PDO::FETCH_ASSOC);
+
+      $stmt4 = $pdo->prepare($sql4);
+      $stmt4->execute(); 
+      $arr4 =  $stmt3->fetch(PDO::FETCH_ASSOC);
+
+      $stmt5 = $pdo->prepare($sql5);
+      $stmt5->execute(); 
+      $arr5 =  $stmt3->fetch(PDO::FETCH_ASSOC);
+
+      $stmt6 = $pdo->prepare($sql6);
+      $stmt6->execute(); 
+      $arr6 =  $stmt3->fetch(PDO::FETCH_ASSOC);
+
+      $stmt7 = $pdo->prepare($sql7);
+      $stmt7->execute(); 
+      $arr7 =  $stmt3->fetch(PDO::FETCH_ASSOC);
+
+      $stmt8 = $pdo->prepare($sql8);
+      $stmt8->execute(); 
+      $arr8 =  $stmt3->fetch(PDO::FETCH_ASSOC);
     ?>
 <table>
   
@@ -137,8 +167,7 @@ footer {
         <img src= " <?php echo $arr3['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br>
         <span> <?php echo $arr3['productname']?> </span></br>
         <span><?php echo $arr3['price']; ?></span>
-      </th>
-      
+      </th>      
     </tr>
     <tr>
       <th>
