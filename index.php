@@ -97,7 +97,7 @@ footer {
     </ul>
   </nav>
   
-  <article>
+  <article style=" height: 1000px" >
     
 
     <?php
