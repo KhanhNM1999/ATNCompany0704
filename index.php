@@ -132,23 +132,23 @@ footer {
 
       $stmt4 = $pdo->prepare($sql4);
       $stmt4->execute(); 
-      $arr4 =  $stmt3->fetch(PDO::FETCH_ASSOC);
+      $arr4 =  $stmt4->fetch(PDO::FETCH_ASSOC);
 
       $stmt5 = $pdo->prepare($sql5);
       $stmt5->execute(); 
-      $arr5 =  $stmt3->fetch(PDO::FETCH_ASSOC);
+      $arr5 =  $stmt5->fetch(PDO::FETCH_ASSOC);
 
       $stmt6 = $pdo->prepare($sql6);
       $stmt6->execute(); 
-      $arr6 =  $stmt3->fetch(PDO::FETCH_ASSOC);
+      $arr6 =  $stmt6->fetch(PDO::FETCH_ASSOC);
 
       $stmt7 = $pdo->prepare($sql7);
       $stmt7->execute(); 
-      $arr7 =  $stmt3->fetch(PDO::FETCH_ASSOC);
+      $arr7 =  $stmt7->fetch(PDO::FETCH_ASSOC);
 
       $stmt8 = $pdo->prepare($sql8);
       $stmt8->execute(); 
-      $arr8 =  $stmt3->fetch(PDO::FETCH_ASSOC);
+      $arr8 =  $stmt8->fetch(PDO::FETCH_ASSOC);
     ?>
 <table>
   
