@@ -96,8 +96,10 @@ footer {
   </nav>
   
   <article>
+    
+
     <?php
-    require_once'/database.php';
+    require_once'./database.php';
       $sql1 = "select id, productname, price, detail, img from product
       Where id = '1'";
       $sql2 = "select id, productname, price, detail, img from product
