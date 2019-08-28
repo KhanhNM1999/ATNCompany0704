@@ -22,7 +22,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  height: 800px;
+  
 }
 
 /* Style the header */
@@ -88,7 +88,7 @@ footer {
 
 </header>
 
-<section>
+<section style=" height: 1000px" >
   <nav>
     <ul>
       <li><a href=" ">Login</a></li>
