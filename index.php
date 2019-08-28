@@ -96,9 +96,54 @@ footer {
   </nav>
   
   <article>
-    <h1>London</h1>
-    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+    <?php
+    require_once'/database.php';
+      $sql1 = "select id, productname, price, detail, img from product
+      Where id = '1'";
+      $sql2 = "select id, productname, price, detail, img from product
+      Where id = '2'";
+      $sql3 = "select id, productname, price, detail, img from product
+      Where id = '3'";
+      $stmt1 = $pdo->prepare($sql1);
+      $stmt1->execute(); 
+      $arr1 =  $stmt1->fetch(PDO::FETCH_ASSOC);
+
+      $stmt2 = $pdo->prepare($sql2);
+      $stmt2->execute(); 
+      $arr2 =  $stmt2->fetch(PDO::FETCH_ASSOC);
+
+      $stmt3 = $pdo->prepare($sql3);
+      $stmt3->execute(); 
+      $arr3 =  $stmt3->fetch(PDO::FETCH_ASSOC);
+    ?>
+<table>
+  
+    <tr>
+      <th>
+        <img src= " <?php echo $arr1['img']; ?>" alt="placeholder+image">
+        <span> <?php echo $arr1['productname']?> </span>
+        <span><?php echo $arr1['price']; ?></span>
+      </th>
+      <th>
+        <img src= " <?php echo $arr2['img']; ?>" alt="placeholder+image">
+        <span> <?php echo $arr2['productname']?> </span>
+        <span><?php echo $arr2['price']; ?></span>
+      </th>
+      <th>
+        <img src= " <?php echo $arr3['img']; ?>" alt="placeholder+image">
+        <span> <?php echo $arr3['productname']?> </span>
+        <span><?php echo $arr3['price']; ?></span>
+      </th>
+      
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  
+
+</table>
   </article>
 </section>
 
