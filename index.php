@@ -22,6 +22,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  height: 800px;
 }
 
 /* Style the header */
@@ -69,7 +70,7 @@ footer {
   padding: 10px;
   text-align: center;
   color: white;
-  height: 200px;
+  height: 100px;
 }
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
