@@ -148,7 +148,7 @@ button:hover {
       <h1>Login</h1>
       <input placeholder="Username" type="text" name ="user" required="">
       <input placeholder="Password" type="password" name = "pass" required="">
-      <button>LOGIN</button>
+      <button type="Submit">LOGIN</button>
     </form>
     <ul>
       <li><a href=" ">Login</a></li>
