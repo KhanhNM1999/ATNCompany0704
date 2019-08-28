@@ -11,7 +11,7 @@
 	$stmt = $pdo->prepare($sql);
 
 	$stmt->execute();
-	$count = $stmt->fetchColum();
+	$count = $stmt->fetchColumn();
 
 if($count > 0)
 {
