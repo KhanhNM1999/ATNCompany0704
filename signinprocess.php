@@ -20,3 +20,4 @@ else
 {
 	echo "Fail con mẹ mày rồi";
 }
+?>
