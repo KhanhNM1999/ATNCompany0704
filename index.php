@@ -71,7 +71,7 @@ footer {
 </head>
 <body>
 <header>
-  <h2><img src="coverbackground.jpg" alt="Sandwich" style="width:50%"></h2>
+  <h2><img src="coverbackground.jpg" alt="Sandwich" style="width:100%"></h2>
 </header>
 
 <section>
