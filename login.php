@@ -1,41 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Get Data</title>
-</head>
-<body>
-<?php
-	require_once'./database.php';
-
-	$userid = $_POST['userid'];
-	$password = $_POST['password'];
-
-	$sql = "SELECT COUNT(*) FROM user WHERE userid='".$userid."' AND password='".$password."'";
-
-
-	// $sql = "SELECT * FROM users WHERE userid = 'hnl' AND password = '12d'";
-	$stmt = $pdo->prepare($sql);
-//$stmt->setFetchMode(PDO::FETCH_ASSOC);
-	$stmt->execute();
-	$count = $stmt->fetchColumn();
-		// $rows = mysql_num_rows($result);
-	if($count > 0)
-	{
-
-		echo "<h1> Login successful</h1>";
-		?>
-		Auto direct, please wait
-		<a href="admin.php"> If not, please click here</a>
-		<?php
-		header("location: index.php");
-	}
-	else 
-	{
-		echo "<h1> Login fail</h1>";
-		
-	}
-
-
+<?php 
+require_once './dbconnector.php';  
+if(isset($_POST["username"]) && isset($_POST["pass"]))
+{
+	$user = $_POST["username"];
+	$pass = $_POST["pass"];
+	$sql ="SELECT * FROM user WHERE userid = '$user' AND pass= '$pass'";
+	$rows = pg_query($sql);
+	if(pg_num_rows($rows)==1) { ?>
+		<script>
+            alert("Login successfully!!");
+        </script>
+    <?php
+    } else { 
+        ?>
+            <script>
+                alert("Wrong Username/Password");
+                window.location.href = "/index.php";
+            </script>
+        <?php }
+}
 ?>
-</body>
-</html>
