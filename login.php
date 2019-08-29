@@ -1,6 +1,5 @@
 <?php 
-include('database.php');
-require_once './database.php.php';  
+require_once 'database.php';  
 if(isset($_POST["username"]) && isset($_POST["pass"]))
 {
 	$user = $_POST["username"];
