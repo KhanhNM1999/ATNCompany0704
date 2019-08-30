@@ -164,12 +164,15 @@ table, th, td {
       <td>img</td>
     </tr>
   <?php
+    header('Content-Type: images/jpg');
     require_once "database.php";
     $sql = "select * from product";
     $result = $pdo->query($sql);
     while ($row = $result->fetch(PDO::FETCH_ASSOC))
     {
+      
       echo "<tr>";
+      echo "<td>".$row['img']."</td>";
       echo "<td>".$row['id']."</td>";
       echo "<td>".$row['productname']."</td>";
       echo "<td>".$row['price']."</td>";
