@@ -164,7 +164,6 @@ table, th, td {
             $row = pg_query($sql);
             $num = (pg_num_rows($rows));
             if ($num > 0) {
-                echo $num." Result search : <b>".$search."</b>";
                 echo '<table border="1" cellspacing="0" cellpadding="10">';
                 foreach( $row as $num ) {
                     echo '<tr>';
