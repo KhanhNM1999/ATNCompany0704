@@ -227,14 +227,14 @@ slide của t cho n cx dài lắm r
     while ($row = $result->fetch(PDO::FETCH_ASSOC))
     {
       echo "<tr>";
-      echo "<td>".row['img'],"</td>";
-      echo "<td>".row['id'],"</td>";
-      echo "<td>".row['productname'],"</td>";
-      echo "<td>".row['price'],"</td>";
-      echo "<td>".row['detail'],"</td>";
-      echo "<td>".row['img'],"</td>";
+      echo "<td>".row['id']."</td>";
+      echo "<td>".row['productname']."</td>";
+      echo "<td>".row['price']."</td>";
+      echo "<td>".row['detail']."</td>";
+      echo "<td>".row['img']."</td>";
       echo "</tr>";
-    } 
+    } //run thử
+    // :v đó là lỗi từ hôm đến h đấy
   ?>
   </article>
 </section>
