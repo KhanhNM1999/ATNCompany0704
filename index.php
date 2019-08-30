@@ -188,8 +188,6 @@ table, th, td {
       $stmt3 = $pdo->prepare($sql3);
       $stmt3->execute(); 
       $arr3 =  $stmt3->fetch(PDO::FETCH_ASSOC);
-
-     
     ?>
 <table>
   
