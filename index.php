@@ -153,12 +153,28 @@ button:hover {
   </nav>
   
   <article style=" height: 800px" >
-    
+
+// db của xampp là mysql
+của thằng pg là pg   
+t gửi cho m cái link git của t xog m lm ok // cũng đc... nản vl rồi
+t thấy đây m đi cop code cmnr :v bố tự làm đấy. cop cc
+connect đơn giản đéo ai lm như m :)) thôi kệ đi, t làm theo m cx đc, tí t xin cái link :'('  
+đọc cẩn thận ko tầu hỏa nhập ma
+https://github.com/PhanNgocHoang/ass2
+slide của t cho n cx dài lắm r
 
     <?php
     require_once'./database.php';
+    /*
       $sql1 = "select id, productname, price, detail, img from product
-      Where id = '1'";
+      Where id = '1'";//đéo ai lấy infor product kiểu này dài bỏ mẹ. thế lấy kiểu gì thì ngắn hơn ? cho t ví dụ phát. @@
+      // m lấy tất infor ra xog m đổ n ra 1 cái bảng n sẽ tự tăng giảm số dòng theo dữ liệu của m. Một câu code ví dụ đi, ui dmd t đau bụng, t đi vệ sinh, hứa sẽ nhanh, đừng bỏ t đm T_T 
+      //xem cái ảnh t gửi xem n ngắn hơn bao nhiêu lần t nghĩ n ngắn hơn theo số lượng sản phẩm của m.
+      // ok để h t xem
+      // nhưng mà làm sao để tr td nó tự tăng khi mà mình add thêm sản phẩm ?
+      // m thấy t echo ra thông tin mỗi cột n sẽ là 1 thông tin vì m đã lấy hết thông tin của sản phẩm ra r nên nó sẽ tự động tăng giảm, m thấy in vào một cột bất kỳ n sẽ lấy hết 1 loại thông tin đổi tất vào cột ý cho đến khi nào hết thì thoy cái này từ đợt lm web r
+      // ko tin thì m thử đi đéo ai mỗi sản phẩm 1 truy vấn để vỡ mồm ak
+
       $sql2 = "select id, productname, price, detail, img from product
       Where id = '2'";
       $sql3 = "select id, productname, price, detail, img from product
@@ -205,52 +221,21 @@ button:hover {
       $stmt8->execute(); 
       $arr8 =  $stmt8->fetch(PDO::FETCH_ASSOC);
     ?>
-<table>
-  
-    <tr>
-      <th>
-        <img src= " <?php echo $arr1['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br>
-        <span> <?php echo $arr1['productname']?> </span></br>
-        <span><?php echo $arr1['price']; ?></span>
-      </th>
-      <th>
-        <img src= " <?php echo $arr2['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br>
-        <span> <?php echo $arr2['productname']?> </span></br>
-        <span><?php echo $arr2['price']; ?></span>
-      </th>
-      <th>
-        <img src= " <?php echo $arr3['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br>
-        <span> <?php echo $arr3['productname']?> </span></br>
-        <span><?php echo $arr3['price']; ?></span>
-      </th>
-      <th>
-        <img src= " <?php echo $arr4['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br>
-        <span> <?php echo $arr4['productname']?> </span></br>
-        <span><?php echo $arr4['price']; ?></span>
-      </th>      
-    </tr>
-    <tr>
-      <th>
-        <img src= " <?php echo $arr5['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br>
-        <span> <?php echo $arr5['productname']?> </span></br>
-        <span><?php echo $arr5['price']; ?></span>
-      </th>
-      <th>
-        <img src= " <?php echo $arr6['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br>
-        <span> <?php echo $arr6['productname']?> </span></br>
-        <span><?php echo $arr6['price']; ?></span>
-      </th>
-      <th><img src= " <?php echo $arr7['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br>
-        <span> <?php echo $arr7['productname']?> </span></br>
-        <span><?php echo $arr7['price']; ?></span>
-      </th>
-      <th>
-        <img src= " <?php echo $arr8['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br>
-        <span> <?php echo $arr8['productname']?> </span></br>
-        <span><?php echo $arr8['price']; ?></span>
-      </th>
-    </tr>
-</table>
+    */
+    $sql = "select * from product" //đã * r thì cần j mấy cái kia - t bỏ cái detail. thôi cứ test cái này đã, tí bỏ sau cx đc
+    $result = $pdo->query($sql);
+    while ($row = $result->fetch(PDO::FETCH_ASSOC))
+    {
+      echo "<tr>";
+      echo "<td>".row['img'],"</td>";
+      echo "<td>".row['id'],"</td>";
+      echo "<td>".row['productname'],"</td>";
+      echo "<td>".row['price'],"</td>";
+      echo "<td>".row['detail'],"</td>";
+      echo "<td>".row['img'],"</td>";
+      echo "</tr>";
+    } 
+  ?>
   </article>
 </section>
 </body>
