@@ -154,19 +154,6 @@ table, th, td {
       <button> Login</button> 
     </form>
   </nav>
-<<<<<<< HEAD
-   <article style=" height: 800px" >
-  <?php
-    require_once "database.php";
-    $sql = "select * from product";
-    $result = $pdo->query($sql);
-    while ($row = $result->fetch(PDO::FETCH_ASSOC))
-    {
-      <tr>
-      <th><img src="images/ <?php echo $row['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></th></br>;
-      </tr>;
-    } 
-  
   <article style=" height: 800px" >
     
 
