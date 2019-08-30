@@ -169,9 +169,7 @@ table, th, td {
     $result = $pdo->query($sql);
     while ($row = $result->fetch(PDO::FETCH_ASSOC))
     {
-      
       echo "<tr>";
-      echo "<td>".$row['img']."</td>";
       echo "<td>".$row['id']."</td>";
       echo "<td>".$row['productname']."</td>";
       echo "<td>".$row['price']."</td>";
