@@ -155,14 +155,6 @@ table, th, td {
     </form>
   </nav>
    <article style=" height: 800px" >
-  <table>
-    <tr>
-      <td>id</td>
-      <td>productname</td>
-      <td>price</td>
-      <td>detail</td>
-      <td>img</td>
-    </tr>
   <?php
     require_once "database.php";
     $sql = "select * from product";
@@ -170,10 +162,10 @@ table, th, td {
     while ($row = $result->fetch(PDO::FETCH_ASSOC))
     {
       echo "<tr>";
-      echo "<td>".$row['id']."</td>";
-      echo "<td>".$row['productname']."</td>";
-      echo "<td>".$row['price']."</td>";
-      echo "<td>".$row['detail']."</td>";
+      echo "<th>".$row['id']."</th>" </br>;
+      echo "<th>".$row['productname']."</th>" </br>;
+      echo "<th>".$row['price']."</th>"</br>;
+      echo "<th>".$row['detail']."</th>";
       echo "</tr>";
     } 
     //cái ảnh t chưa tìm hiểu của post t nghĩ bỏ cái ảnh đi n còn nhiều vấn đề đi theo lắm
@@ -181,7 +173,6 @@ table, th, td {
     // lm front end di con server lm dk den dau thi lm ko thi check qua code cua t @@ ok
     // m ko bao t som t lm xog t da qua cho may cai tinh nang nho thi 1 buoi. OK the t lam day, co gi t hoi m sau, thank m
   ?>
-  </table>
   </article>
 </section>
 </body>
