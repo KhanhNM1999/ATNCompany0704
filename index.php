@@ -162,7 +162,7 @@ table, th, td {
     while ($row = $result->fetch(PDO::FETCH_ASSOC))
     {
       echo "<tr>";
-      echo "<th>" $row['img'] "</th></br>";
+      echo "<th>".$row['img']."</th></br>";
       echo "<th>".$row['productname']."</th></br>";
       echo "<th>".$row['price']."</th> </br>";
       echo "<th>".$row['detail']."</th> </br>";
