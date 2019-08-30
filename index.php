@@ -149,8 +149,7 @@ table, th, td {
   <nav style=" height: 800px">
     <form action="login.php" method="POST">
       <h1>Login</h1>
-      <input placeholder="Username" type="text" name ="username" required="">
-      <input placeholder="Password" type="password" name = "password" required="">
+      <input placeholder="search" type="text" name ="Search" required="">
       <button> Login</button> 
     </form>
   </nav>
