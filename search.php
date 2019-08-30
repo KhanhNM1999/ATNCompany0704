@@ -1,6 +1,5 @@
 <?php
-include("database.php");
-
+require_once'./database.php';
 ?>
         <?php
         if (isset( $_GET["search"] ) != '') {
@@ -9,7 +8,7 @@ include("database.php");
             $row = pg_query($sql);
             $num = (pg_num_rows($rows));
             if ($num > 0) {
-                echo $num." ket qua tra ve voi tu khoa <b>".$search."</b>";
+                echo $num." Result search : <b>".$search."</b>";
                 echo '<table border="1" cellspacing="0" cellpadding="10">';
                 foreach( $row as $num ) {
                     echo '<tr>';
