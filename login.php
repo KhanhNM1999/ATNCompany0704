@@ -1,9 +1,9 @@
 <?php 
 require_once'./database.php'; 
-if(isset($_POST["username"]) && isset($_POST["password"]))
+if(isset($POST["username"]) && isset($POST["password"]))
 {
-	$user = $_POST["username"];
-	$pass = $_POST["password"];
+	$user = $POST["username"];
+	$pass = $POST["password"];
 	$sql ="SELECT * FROM user WHERE userid = '$user' AND pass= '$pass'";
 	$rows = pg_query($sql);
 	if(pg_num_rows($rows)==1) { ?>
