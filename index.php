@@ -162,10 +162,10 @@ table, th, td {
     while ($row = $result->fetch(PDO::FETCH_ASSOC))
     {
       echo "<tr>";
-      echo "<th>".$row['id']."</th>" </br>;
-      echo "<th>".$row['productname']."</th>" </br>;
-      echo "<th>".$row['price']."</th>"</br>;
-      echo "<th>".$row['detail']."</th>";
+      echo "<th>".$row['id']."</th> </br>";
+      echo "<th>".$row['productname']."</th> </br>";
+      echo "<th>".$row['price']."</th> </br>";
+      echo "<th>".$row['detail']."</th> </br>";
       echo "</tr>";
     } 
     //cái ảnh t chưa tìm hiểu của post t nghĩ bỏ cái ảnh đi n còn nhiều vấn đề đi theo lắm
