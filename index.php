@@ -161,12 +161,13 @@ table, th, td {
     $result = $pdo->query($sql);
     while ($row = $result->fetch(PDO::FETCH_ASSOC))
     {
-      echo "<tr>";
-      echo "<th>".$row['img']."</th></br>";
-      echo "<th>".$row['productname']."</th></br>";
-      echo "<th>".$row['price']."</th> </br>";
-      echo "<th>".$row['detail']."</th> </br>";
-      echo "</tr>";
+      <tr>
+
+      <th>.$row['img'].</th></br>;
+      <th>.$row['productname'].</th></br>;
+      <th>.$row['price'].</th> </br>;
+      <th>.$row['detail'].</th> </br>;
+      </tr>;
     } 
     //cái ảnh t chưa tìm hiểu của post t nghĩ bỏ cái ảnh đi n còn nhiều vấn đề đi theo lắm
     //vs cả m n3n lm 1 trang login vs 1 trang admin ri3ng de nhu nay thi can j login... ok
