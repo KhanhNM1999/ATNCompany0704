@@ -154,8 +154,7 @@ table, th, td {
       <button> Login</button> 
     </form>
   </nav>
-  
-  <article style=" height: 800px" >
+   <article style=" height: 800px" >
   <table>
     <tr>
       <td>id</td>
@@ -171,13 +170,17 @@ table, th, td {
     while ($row = $result->fetch(PDO::FETCH_ASSOC))
     {
       echo "<tr>";
+      <img src= " <?php echo $row['img']; ?>" alt="placeholder+image">
       echo "<td>".$row['id']."</td>";
       echo "<td>".$row['productname']."</td>";
       echo "<td>".$row['price']."</td>";
       echo "<td>".$row['detail']."</td>";
-      echo "<td>".$row['img']."</td>";
       echo "</tr>";
     } 
+    //cái ảnh t chưa tìm hiểu của post t nghĩ bỏ cái ảnh đi n còn nhiều vấn đề đi theo lắm
+    //vs cả m n3n lm 1 trang login vs 1 trang admin ri3ng de nhu nay thi can j login... ok
+    // lm front end di con server lm dk den dau thi lm ko thi check qua code cua t @@ ok
+    // m ko bao t som t lm xog t da qua cho may cai tinh nang nho thi 1 buoi. OK the t lam day, co gi t hoi m sau, thank m
   ?>
   </table>
   </article>
@@ -187,4 +190,4 @@ table, th, td {
   <p>ATN Company</p>
 </footer>
 
-</html>
+</html> 
