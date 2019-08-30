@@ -6,9 +6,7 @@ include("database.php");
         if (isset( $_GET["search"] ) != '') {
             $search = $_GET['search'];
             $sql = "SELECT * FROM product WHERE (productname like '%$search%') OR (price like '%$search%') ";
-     
             $row = pg_query($sql);
-      //echo $sql;
             $num = (pg_num_rows($rows);
             if ($num > 0) {
                 echo $num." ket qua tra ve voi tu khoa <b>".$search."</b>";
