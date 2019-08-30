@@ -6,7 +6,7 @@ if(isset($_POST["username"]) && isset($_POST["password"]))
 	$pass = $_POST["password"];
 	$sql ="SELECT * FROM user WHERE username = '{$user}' AND password = '{$pass}'";
 	$rows = pg_query($sql);
-	if(pg_num_rows($rows)==1) { ?>
+	if(pg_num_rows($rows)>0) { ?>
 		<script>
             alert("Login successfully!!");
         </script>
@@ -19,4 +19,3 @@ if(isset($_POST["username"]) && isset($_POST["password"]))
             </script>
         <?php }
 }
-?>
