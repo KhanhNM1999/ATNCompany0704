@@ -164,7 +164,7 @@ https://github.com/PhanNgocHoang/ass2
 slide của t cho n cx dài lắm r
 
     <?php
-    require_once'./database.php';
+    
     /*
       $sql1 = "select id, productname, price, detail, img from product
       Where id = '1'";//đéo ai lấy infor product kiểu này dài bỏ mẹ. thế lấy kiểu gì thì ngắn hơn ? cho t ví dụ phát. @@
@@ -222,7 +222,8 @@ slide của t cho n cx dài lắm r
       $arr8 =  $stmt8->fetch(PDO::FETCH_ASSOC);
     ?>
     */
-    $sql = "select * from product" //đã * r thì cần j mấy cái kia - t bỏ cái detail. thôi cứ test cái này đã, tí bỏ sau cx đc
+    require_once'database.php';
+    $sql = "select * from product";
     $result = $pdo->query($sql);
     while ($row = $result->fetch(PDO::FETCH_ASSOC))
     {
@@ -233,8 +234,7 @@ slide của t cho n cx dài lắm r
       echo "<td>".row['detail']."</td>";
       echo "<td>".row['img']."</td>";
       echo "</tr>";
-    } //run thử
-    // :v đó là lỗi từ hôm đến h đấy
+    } 
   ?>
   </article>
 </section>
@@ -244,3 +244,4 @@ slide của t cho n cx dài lắm r
 </footer>
 
 </html>
+t chuyển code m qua m t t fix cho n nhanh ok
