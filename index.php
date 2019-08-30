@@ -147,7 +147,7 @@ table, th, td {
 
 <section >
   <nav style=" height: 800px">
-    <form action="search.php" method="POST">
+    <form action="search.php" method="GET">
       <h1>Search Toys</h1>
       <input placeholder="Search" type="text" name ="Search" required="">
       <button> Search </button> 

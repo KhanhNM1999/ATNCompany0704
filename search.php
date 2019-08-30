@@ -3,7 +3,7 @@ include("database.php");
 
 ?>
         <?php
-        if (isset( $_GET['submit']) && $_GET["search"] != '') {
+        if (isset( $_GET["search"] ) != '') {
             $search = $_GET['search'];
             $sql = "SELECT * FROM product WHERE (productname like '%$search%') OR (price like '%$search%') ";
      
