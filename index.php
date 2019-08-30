@@ -154,16 +154,8 @@ button:hover {
   
   <article style=" height: 800px" >
 
-// db của xampp là mysql
-của thằng pg là pg   
-t gửi cho m cái link git của t xog m lm ok // cũng đc... nản vl rồi
-t thấy đây m đi cop code cmnr :v bố tự làm đấy. cop cc
-connect đơn giản đéo ai lm như m :)) thôi kệ đi, t làm theo m cx đc, tí t xin cái link :'('  
-đọc cẩn thận ko tầu hỏa nhập ma
-https://github.com/PhanNgocHoang/ass2
-slide của t cho n cx dài lắm r
 
-    <?php
+    
     
     /*
       $sql1 = "select id, productname, price, detail, img from product
@@ -222,6 +214,7 @@ slide của t cho n cx dài lắm r
       $arr8 =  $stmt8->fetch(PDO::FETCH_ASSOC);
     ?>
     */
+    <?php
     require_once'database.php';
     $sql = "select * from product";
     $result = $pdo->query($sql);
@@ -244,4 +237,3 @@ slide của t cho n cx dài lắm r
 </footer>
 
 </html>
-t chuyển code m qua m t t fix cho n nhanh ok
