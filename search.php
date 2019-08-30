@@ -163,12 +163,10 @@ table, th, td {
             $sql = "SELECT * FROM product WHERE (productname like '%$search%') OR (price like '%$search%') ";
             $result = pg_query($sql);
             if ($row = $result->fetch(PDO::FETCH_ASSOC)) {
-                echo '<table border="1" cellspacing="0" cellpadding="10">';
                 echo "<tr>";
                 echo "<td>".$row['productname']."</td>";
                 echo "<td>".$row['price']."</td>";
                 echo "</tr>";               
-                echo '</table>';
             } 
             else {
                 echo "No result";
@@ -182,5 +180,4 @@ table, th, td {
 <footer>
   <p>ATN Company</p>
 </footer>
-
 </html>
