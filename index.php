@@ -170,7 +170,6 @@ table, th, td {
     while ($row = $result->fetch(PDO::FETCH_ASSOC))
     {
       echo "<tr>";
-      <img src= " <?php echo $row['img']; ?>" alt="placeholder+image">
       echo "<td>".$row['id']."</td>";
       echo "<td>".$row['productname']."</td>";
       echo "<td>".$row['price']."</td>";
