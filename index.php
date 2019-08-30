@@ -10,7 +10,7 @@
 }
 .bg {
   /* The image used */
-	background-image: url("coverbackground.jpg");
+  background-image: url("coverbackground.jpg");
   /* Full height */
   height: 100%; 
 
@@ -134,6 +134,9 @@ button:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
 }
+table, th, td {
+  border: 1px solid black;
+}
 </style>
 </head>
 <body>
@@ -153,82 +156,30 @@ button:hover {
   </nav>
   
   <article style=" height: 800px" >
-
-
-    
-    
-    /*
-      $sql1 = "select id, productname, price, detail, img from product
-      Where id = '1'";//đéo ai lấy infor product kiểu này dài bỏ mẹ. thế lấy kiểu gì thì ngắn hơn ? cho t ví dụ phát. @@
-      // m lấy tất infor ra xog m đổ n ra 1 cái bảng n sẽ tự tăng giảm số dòng theo dữ liệu của m. Một câu code ví dụ đi, ui dmd t đau bụng, t đi vệ sinh, hứa sẽ nhanh, đừng bỏ t đm T_T 
-      //xem cái ảnh t gửi xem n ngắn hơn bao nhiêu lần t nghĩ n ngắn hơn theo số lượng sản phẩm của m.
-      // ok để h t xem
-      // nhưng mà làm sao để tr td nó tự tăng khi mà mình add thêm sản phẩm ?
-      // m thấy t echo ra thông tin mỗi cột n sẽ là 1 thông tin vì m đã lấy hết thông tin của sản phẩm ra r nên nó sẽ tự động tăng giảm, m thấy in vào một cột bất kỳ n sẽ lấy hết 1 loại thông tin đổi tất vào cột ý cho đến khi nào hết thì thoy cái này từ đợt lm web r
-      // ko tin thì m thử đi đéo ai mỗi sản phẩm 1 truy vấn để vỡ mồm ak
-
-      $sql2 = "select id, productname, price, detail, img from product
-      Where id = '2'";
-      $sql3 = "select id, productname, price, detail, img from product
-      Where id = '3'";
-      $sql4 = "select id, productname, price, detail, img from product
-      Where id = '4'";
-      $sql5 = "select id, productname, price, detail, img from product
-      Where id = '5'";
-      $sql6 = "select id, productname, price, detail, img from product
-      Where id = '6'";
-      $sql7 = "select id, productname, price, detail, img from product
-      Where id = '7'";
-      $sql8 = "select id, productname, price, detail, img from product
-      Where id = '8'";
-      $stmt1 = $pdo->prepare($sql1);
-      $stmt1->execute(); 
-      $arr1 =  $stmt1->fetch(PDO::FETCH_ASSOC);
-
-      $stmt2 = $pdo->prepare($sql2);
-      $stmt2->execute(); 
-      $arr2 =  $stmt2->fetch(PDO::FETCH_ASSOC);
-
-      $stmt3 = $pdo->prepare($sql3);
-      $stmt3->execute(); 
-      $arr3 =  $stmt3->fetch(PDO::FETCH_ASSOC);
-
-      $stmt4 = $pdo->prepare($sql4);
-      $stmt4->execute(); 
-      $arr4 =  $stmt4->fetch(PDO::FETCH_ASSOC);
-
-      $stmt5 = $pdo->prepare($sql5);
-      $stmt5->execute(); 
-      $arr5 =  $stmt5->fetch(PDO::FETCH_ASSOC);
-
-      $stmt6 = $pdo->prepare($sql6);
-      $stmt6->execute(); 
-      $arr6 =  $stmt6->fetch(PDO::FETCH_ASSOC);
-
-      $stmt7 = $pdo->prepare($sql7);
-      $stmt7->execute(); 
-      $arr7 =  $stmt7->fetch(PDO::FETCH_ASSOC);
-
-      $stmt8 = $pdo->prepare($sql8);
-      $stmt8->execute(); 
-      $arr8 =  $stmt8->fetch(PDO::FETCH_ASSOC);
-    ?>
-    */
-    <?php
-    require_once'database.php';
+  <table>
+    <tr>
+      <td>id</td>
+      <td>productname</td>
+      <td>price</td>
+      <td>detail</td>
+      <td>img</td>
+    </tr>
+  <?php
+    require_once "database.php";
     $sql = "select * from product";
     $result = $pdo->query($sql);
     while ($row = $result->fetch(PDO::FETCH_ASSOC))
     {
       echo "<tr>";
-      echo "<td>".row['id']."</td>";
-      echo "<td>".row['productname']."</td>";
-      echo "<td>".row['price']."</td>";
-      echo "<td>".row['detail']."</td>";
-      echo "<td>".row['img']."</td>";
+      echo "<td>".$row['id']."</td>";
+      echo "<td>".$row['productname']."</td>";
+      echo "<td>".$row['price']."</td>";
+      echo "<td>".$row['detail']."</td>";
+      echo "<td>".$row['img']."</td>";
       echo "</tr>";
     } 
   ?>
+  </table>
   </article>
 </section>
 </body>
