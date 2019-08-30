@@ -13,7 +13,7 @@ include("database.php");
             if ($num > 0) {
                 echo $num." ket qua tra ve voi tu khoa <b>".$search."</b>";
                 echo '<table border="1" cellspacing="0" cellpadding="10">';
-                foreach( $sql as $row ) {
+                foreach( $row as $num ) {
                     echo '<tr>';
                         echo "<td>{$row['productname']}</td>";
                         echo "<td>{$row['price']}</td>";
