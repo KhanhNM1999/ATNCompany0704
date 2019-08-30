@@ -162,11 +162,7 @@ table, th, td {
     while ($row = $result->fetch(PDO::FETCH_ASSOC))
     {
       <tr>
-
-      <th>.$row['img'].</th></br>;
-      <th>.$row['productname'].</th></br>;
-      <th>.$row['price'].</th> </br>;
-      <th>.$row['detail'].</th> </br>;
+      <th><img src= " <?php echo $row['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br></br>;
       </tr>;
     } 
     //cái ảnh t chưa tìm hiểu của post t nghĩ bỏ cái ảnh đi n còn nhiều vấn đề đi theo lắm
