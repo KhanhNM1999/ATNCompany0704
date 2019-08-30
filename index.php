@@ -164,7 +164,6 @@ table, th, td {
       <td>img</td>
     </tr>
   <?php
-    header('Content-Type: images/jpg');
     require_once "database.php";
     $sql = "select * from product";
     $result = $pdo->query($sql);
