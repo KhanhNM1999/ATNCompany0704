@@ -149,7 +149,7 @@ table, th, td {
   <nav style=" height: 800px">
     <form action="search.php" method="GET">
       <h1>Search Toys</h1>
-      <input placeholder="search" type="text" name ="Search" required="">
+      <input placeholder="search" type="text" name ="search" required="">
       <button> Search </button> 
     </form>
   </nav>
