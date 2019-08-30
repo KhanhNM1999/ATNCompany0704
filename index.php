@@ -154,6 +154,7 @@ table, th, td {
       <button> Login</button> 
     </form>
   </nav>
+<<<<<<< HEAD
    <article style=" height: 800px" >
   <?php
     require_once "database.php";
@@ -165,11 +166,109 @@ table, th, td {
       <th><img src="images/ <?php echo $row['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></th></br>;
       </tr>;
     } 
-    //cái ảnh t chưa tìm hiểu của post t nghĩ bỏ cái ảnh đi n còn nhiều vấn đề đi theo lắm
-    //vs cả m n3n lm 1 trang login vs 1 trang admin ri3ng de nhu nay thi can j login... ok
-    // lm front end di con server lm dk den dau thi lm ko thi check qua code cua t @@ ok
-    // m ko bao t som t lm xog t da qua cho may cai tinh nang nho thi 1 buoi. OK the t lam day, co gi t hoi m sau, thank m
-  ?>
+  
+  <article style=" height: 800px" >
+    
+
+    <?php
+    require_once'./database.php';
+      $sql1 = "select id, productname, price, detail, img from product
+      Where id = '1'";
+      $sql2 = "select id, productname, price, detail, img from product
+      Where id = '2'";
+      $sql3 = "select id, productname, price, detail, img from product
+      Where id = '3'";
+      $sql3 = "select id, productname, price, detail, img from product
+      Where id = '4'";
+      $sql3 = "select id, productname, price, detail, img from product
+      Where id = '5'";
+      $sql3 = "select id, productname, price, detail, img from product
+      Where id = '6'";
+      $sql3 = "select id, productname, price, detail, img from product
+      Where id = '7'";
+      $sql3 = "select id, productname, price, detail, img from product
+      Where id = '8'";
+      $stmt1 = $pdo->prepare($sql1);
+      $stmt1->execute(); 
+      $arr1 =  $stmt1->fetch(PDO::FETCH_ASSOC);
+
+      $stmt2 = $pdo->prepare($sql2);
+      $stmt2->execute(); 
+      $arr2 =  $stmt2->fetch(PDO::FETCH_ASSOC);
+
+      $stmt3 = $pdo->prepare($sql3);
+      $stmt3->execute(); 
+      $arr3 =  $stmt3->fetch(PDO::FETCH_ASSOC);
+
+      $stmt4 = $pdo->prepare($sql4);
+      $stmt4->execute(); 
+      $arr4 =  $stmt4->fetch(PDO::FETCH_ASSOC);
+
+      $stmt5 = $pdo->prepare($sql5);
+      $stmt5->execute(); 
+      $arr5 =  $stmt5->fetch(PDO::FETCH_ASSOC);
+
+      $stmt6 = $pdo->prepare($sql6);
+      $stmt6->execute(); 
+      $arr6 =  $stmt6->fetch(PDO::FETCH_ASSOC);
+
+      $stmt7 = $pdo->prepare($sql7);
+      $stmt7->execute(); 
+      $arr7 =  $stmt7->fetch(PDO::FETCH_ASSOC);
+
+      $stmt8 = $pdo->prepare($sql8);
+      $stmt8->execute(); 
+      $arr8 =  $stmt8->fetch(PDO::FETCH_ASSOC);
+    ?>
+<table>
+  
+    <tr>
+      <th>
+        <img src= " <?php echo $arr1['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br>
+        <span> <?php echo $arr1['productname']?> </span></br>
+        <span><?php echo $arr1['price']; ?></span>
+      </th>
+      <th>
+        <img src= " <?php echo $arr2['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br>
+        <span> <?php echo $arr2['productname']?> </span></br>
+        <span><?php echo $arr2['price']; ?></span>
+      </th>
+      <th>
+        <img src= " <?php echo $arr3['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br>
+        <span> <?php echo $arr3['productname']?> </span></br>
+        <span><?php echo $arr3['price']; ?></span>
+      </th>      
+    </tr>
+    <tr>
+      <th>
+        <img src= " <?php echo $arr4['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br>
+        <span> <?php echo $arr4['productname']?> </span></br>
+        <span><?php echo $arr4['price']; ?></span>
+      </th>
+      <th>
+        <img src= " <?php echo $arr5['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br>
+        <span> <?php echo $arr5['productname']?> </span></br>
+        <span><?php echo $arr5['price']; ?></span>
+      </th>
+      <th>
+        <img src= " <?php echo $arr6['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br>
+        <span> <?php echo $arr6['productname']?> </span></br>
+        <span><?php echo $arr6['price']; ?></span>
+      </th>
+    </tr>
+    <tr>
+      <th><img src= " <?php echo $arr7['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br>
+        <span> <?php echo $arr7['productname']?> </span></br>
+        <span><?php echo $arr7['price']; ?></span>
+      </th>
+      <th>
+        <img src= " <?php echo $arr8['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br>
+        <span> <?php echo $arr8['productname']?> </span></br>
+        <span><?php echo $arr8['price']; ?></span>
+      </th>
+      <th></th>
+    </tr>
+</table>
   </article>
 </section>
 </body>
