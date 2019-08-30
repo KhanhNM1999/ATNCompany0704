@@ -164,11 +164,10 @@ table, th, td {
             $result = pg_query($sql);
             if ($row = $result->fetch(PDO::FETCH_ASSOC)) {
                 echo '<table border="1" cellspacing="0" cellpadding="10">';
-                
-                echo '<tr>';
-                echo "<td>{$row['productname']}</td>";
-                echo "<td>{$row['price']}</td>";
-                echo '</tr>';               
+                echo "<tr>";
+                echo "<td>".$row['productname']."</td>";
+                echo "<td>".$row['price']."</td>";
+                echo "</tr>";               
                 echo '</table>';
             } 
             else {
