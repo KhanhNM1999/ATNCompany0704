@@ -209,7 +209,7 @@ table, th, td {
       $stmt8->execute(); 
       $arr8 =  $stmt8->fetch(PDO::FETCH_ASSOC);
     ?>
-<table>
+<table border: none>
     <tr>
       <th>
         <img src= " <?php echo $arr1['img']; ?>" style="width: 200 px; height: 250px" alt="placeholder+image"></br>
