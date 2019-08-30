@@ -161,7 +161,7 @@ table, th, td {
         if (isset( $_GET["search"] ) != '') {
             $search = $_GET['search'];
             $sql = "SELECT * FROM product WHERE (productname like '%$search%') OR (price like '%$search%') ";
-            $result = pg_query($sql);
+            $result = $pdo->query($sql);
             if ($row = $result->fetch(PDO::FETCH_ASSOC)) {
                 echo "<tr>";
                 echo "<td>".$row['productname']."</td>";
