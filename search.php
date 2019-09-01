@@ -164,7 +164,7 @@ table, th, td {
             $result = $pdo->query($sql);
             if ($row = $result->fetch(PDO::FETCH_ASSOC)) {
                 echo "<tr>";
-                echo "<td>".$row['productname']."</td>";
+                echo "<td>".$row['productname']."</td></br>";
                 echo "<td>".$row['price']."</td>";
                 echo "</tr>";               
             } 
